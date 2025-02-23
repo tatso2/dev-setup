@@ -14,7 +14,7 @@ config.font_size = 16
 
 -- UI bit
 config.enable_tab_bar = true
-config.window_background_opacity = 0.87
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 20
 config.text_background_opacity = 1
 config.inactive_pane_hsb = {
