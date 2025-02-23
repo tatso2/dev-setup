@@ -1,6 +1,10 @@
 iterm2
 yarn
 alacritty
+NuGet
+.DS_Store
+fish
+xbuild
 
 nvim/lazy-lock.json
 
