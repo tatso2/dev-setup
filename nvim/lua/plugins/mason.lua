@@ -23,7 +23,6 @@ return {
       ensure_installed = {
         "clangd", -- c++
         "emmet_ls",
-        "eslint",
         "gopls", -- Go
         "pyright", -- Python
         "rust_analyzer", -- Rust
