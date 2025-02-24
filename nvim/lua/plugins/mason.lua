@@ -22,6 +22,7 @@ return {
     mason_lspconfig.setup({
       ensure_installed = {
         "clangd",
+        "emmet_ls",
         "gopls",
         "pyright",
         "rust_analyzer",

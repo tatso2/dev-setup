@@ -103,7 +103,22 @@ return {
             },
           },
         })
-      end
+      end,
+      ["emmet_ls"] = function()
+        lspconfig["emmet_ls"].setup({
+          capabilities = capabilities,
+          filetypes = {
+            "html",
+            "javascriptreact",
+            "typescriptreact",
+            "css",
+            "sass",
+            "scss",
+            "less",
+            "svelte",
+          },
+        })
+      end,
     })
 
     -- Auto completion
