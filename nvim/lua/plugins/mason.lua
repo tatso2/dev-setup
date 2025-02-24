@@ -21,15 +21,15 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        "clangd",
+        "clangd", -- c++
         "emmet_ls",
-        "gopls",
-        "pyright",
-        "rust_analyzer",
-        "html",
-        "lua_ls",
-        "tailwindcss",
-        "ts_ls",
+        "eslint",
+        "gopls", -- Go
+        "pyright", -- Python
+        "rust_analyzer", -- Rust
+        "html", -- html
+        "lua_ls", -- lua
+        "tailwindcss", -- tailwindcss
       },
     })
 

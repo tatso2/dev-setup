@@ -45,6 +45,9 @@ return {
         local keymap = vim.keymap
         local opts = { buffer = event.buf }
 
+        opts.desc = "Show LSP references"
+        keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
+
         opts.desc = "Show documentation for what is under cursor"
         keymap.set("n", "K", vim.lsp.buf.hover, opts)
 
@@ -118,6 +121,7 @@ return {
             "typescript",
             "typescriptreact",
             "typescript.tsx",
+            "vue",
           }
         })
       end,
