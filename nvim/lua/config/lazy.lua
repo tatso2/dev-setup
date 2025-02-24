@@ -44,6 +44,7 @@ require("lazy").setup({
     { import = "plugins.nvim-colorizer" },
     { import = "plugins.telescope" },
     { import = "plugins.trouble" },
+    { import = "plugins.formatting" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
