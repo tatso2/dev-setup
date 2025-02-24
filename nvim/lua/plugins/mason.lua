@@ -29,6 +29,7 @@ return {
         "html",
         "lua_ls",
         "tailwindcss",
+        "ts_ls",
       },
     })
 

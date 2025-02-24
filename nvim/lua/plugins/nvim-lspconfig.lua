@@ -9,16 +9,6 @@ return {
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
     local mason_lsp_config = require("mason-lspconfig")
 
-    local border = {
-      { '┌', 'FloatBorder' },
-      { '─', 'FloatBorder' },
-      { '┐', 'FloatBorder' },
-      { '│', 'FloatBorder' },
-      { '┘', 'FloatBorder' },
-      { '─', 'FloatBorder' },
-      { '└', 'FloatBorder' },
-      { '│', 'FloatBorder' },
-    }
     -- Disable lsp diagnostics messages & underline, but leave signs
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
       vim.lsp.diagnostic.on_publish_diagnostics,
@@ -48,9 +38,6 @@ return {
         border = "rounded",
       }
     )
-
-    -- vim.cmd[[autocmd! NormalFloat guibg=#FF0FF0]]
-    -- vim.cmd[[autocmd! ColorScheme * highlight FloatBorder guifg=#ffffff guibg=#99999f]]
 
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -110,13 +97,28 @@ return {
           filetypes = {
             "html",
             "javascriptreact",
+            "javascript",
             "typescriptreact",
             "css",
             "sass",
             "scss",
             "less",
             "svelte",
+            "vue",
           },
+        })
+      end,
+      ["ts_ls"] = function()
+        lspconfig["ts_ls"].setup({
+          capabilities = capabilities,
+          filetypes = {
+            "javascript",
+            "javascriptreact",
+            "javascript.jsx",
+            "typescript",
+            "typescriptreact",
+            "typescript.tsx",
+          }
         })
       end,
     })
