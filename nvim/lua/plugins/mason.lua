@@ -43,6 +43,8 @@ return {
 				"shfmt", -- bash formatter,
 				"goimports", -- Go formatter,
 				"gofumpt", -- Go formatter,
+				"pylint", -- python linter
+				"eslint_d", -- web dev related linter
 			},
 		})
 	end,

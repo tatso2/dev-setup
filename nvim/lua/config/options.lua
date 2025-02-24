@@ -14,25 +14,25 @@ opt.smartindent = true
 
 opt.termguicolors = true
 opt.background = "dark"
-opt.cursorline = true  -- Enable highlighting of the current line
+opt.cursorline = true -- Enable highlighting of the current line
 opt.ignorecase = true -- Ignore case
 opt.showcmd = false
 
 -- search settings
-opt.ignorecase = true  -- Ignore case when searching
-opt.smartcase = true  -- If you include mixed case in your search, assumes you want case-sensitive
+opt.ignorecase = true -- Ignore case when searching
+opt.smartcase = true -- If you include mixed case in your search, assumes you want case-sensitive
 
 opt.signcolumn = "yes"
-opt.backspace = "indent,eol,start"  -- allow backspace on indent, etc.
+opt.backspace = "indent,eol,start" -- allow backspace on indent, etc.
 
 -- clipboard
-opt.clipboard:append({"unnamedplus"})  -- use system clipboard as default register
+opt.clipboard:append({ "unnamedplus" }) -- use system clipboard as default register
 
 -- split windows
 opt.splitright = true
 
 if vim.fn.has("nvim-0.10") == 1 then
-  opt.smoothscroll = true
+	opt.smoothscroll = true
 end
 
 -- System settings
@@ -40,5 +40,3 @@ opt.swapfile = false
 
 -- GUI settings
 -- opt.guicursor = "n-i-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
-
-
