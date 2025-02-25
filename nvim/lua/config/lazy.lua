@@ -39,7 +39,7 @@ require("lazy").setup({
 		{ import = "plugins.nvim-lspconfig" },
 		{ import = "plugins.nvim-cmp" },
 		{ import = "plugins.nvim-autopairs" },
-		{ import = "plugins.hlchunk" },
+		-- { import = "plugins.hlchunk" },
 		{ import = "plugins.bufferline" },
 		{ import = "plugins.nvim-colorizer" },
 		{ import = "plugins.telescope" },

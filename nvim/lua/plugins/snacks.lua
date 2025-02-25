@@ -11,5 +11,8 @@ return {
 			row = nil,
 			col = nil,
 		},
+		indent = {
+			enabled = true,
+		},
 	},
 }
