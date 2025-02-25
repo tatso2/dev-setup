@@ -49,6 +49,7 @@ require("lazy").setup({
 		{ import = "plugins.todo-comments" },
 		{ import = "plugins.substitute" },
 		{ import = "plugins.surround" },
+		{ import = "plugins.snacks" },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
