@@ -3,6 +3,9 @@ return {
 	event = "VeryLazy",
 	opts = {
 		-- configurations
+		win = {
+			border = "single",
+		},
 	},
 	keys = {
 		{

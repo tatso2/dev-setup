@@ -2,11 +2,10 @@ return {
 	"akinsho/toggleterm.nvim",
 	version = "*",
 	opts = {
+		direction = "float",
 		open_mapping = [[<c-`>]],
-		highlights = {
-			NormalFloat = {
-				guibg = "#00FF00",
-			},
+		float_opts = {
+			border = "single",
 		},
 	},
 	config = function(_, opts)

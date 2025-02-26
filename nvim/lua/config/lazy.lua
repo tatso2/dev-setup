@@ -26,6 +26,7 @@ require("lazy").setup({
 	spec = {
 		-- import all plugins in lua/plugins/
 		{ import = "plugins.ui.catppuccin" },
+		-- { import = "plugins.ui.tokyonight" },
 		{ import = "plugins.toggleterm" },
 		{ import = "plugins.neotree" },
 		{ import = "plugins.lualine" },
@@ -50,6 +51,14 @@ require("lazy").setup({
 		{ import = "plugins.substitute" },
 		{ import = "plugins.surround" },
 		{ import = "plugins.snacks" },
+	},
+	-- UI configs
+	ui = {
+		border = "single",
+		size = {
+			width = 0.8,
+			height = 0.8,
+		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.

@@ -5,12 +5,12 @@ return {
 	lazy = false,
 	config = function()
 		local catppuccin = require("catppuccin")
-		local mocha = require("catppuccin.palettes").get_palette("mocha")
 		local macchiato = require("catppuccin.palettes").get_palette("macchiato")
 
 		catppuccin.setup({
 			flavour = "mocha",
 			transparent_background = true,
+			show_end_of_buffer = false,
 			term_colors = true,
 			color_overrides = {
 				mocha = {

@@ -19,21 +19,26 @@ return {
 
 		require("tokyonight").setup({
 			style = "storm",
-			on_colors = function(colors)
-				colors.bg = bg
-				colors.bg_highlight = bg_highlight
-				colors.bg_sidebar = bg_sidebar
-				colors.bg_statusline = bg_statusline
-				colors.fg = fg -- font color
-				colors.fg_dark = fg_dark
-				colors.fg_gutter = fg_gutter
-				colors.fg_sidebar = fg_sidebar
-			end,
-			on_highlights = function(hl)
-				hl.LineNrAbove = { fg = LineNrUnselected }
-				hl.LineNrBelow = { fg = LineNrUnselected }
-				hl.Comment = { fg = comment }
-			end,
+			transparent = true,
+			styles = {
+				-- sidebars = "transparent",
+				floats = "transparent",
+			},
+			-- on_colors = function(colors)
+			-- 	colors.bg = bg
+			-- 	colors.bg_highlight = bg_highlight
+			-- 	colors.bg_sidebar = bg_sidebar
+			-- 	colors.bg_statusline = bg_statusline
+			-- 	colors.fg = fg -- font color
+			-- 	colors.fg_dark = fg_dark
+			-- 	colors.fg_gutter = fg_gutter
+			-- 	colors.fg_sidebar = fg_sidebar
+			-- end,
+			-- on_highlights = function(hl)
+			-- 	hl.LineNrAbove = { fg = LineNrUnselected }
+			-- 	hl.LineNrBelow = { fg = LineNrUnselected }
+			-- 	hl.Comment = { fg = comment }
+			-- end,
 		})
 		vim.cmd([[colorscheme tokyonight]])
 	end,
