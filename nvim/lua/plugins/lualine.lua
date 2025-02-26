@@ -7,10 +7,9 @@ return {
 
 		lualine.setup({
 			sections = {
-				lualine_b = {
+				lualine_c = {
 					{ "filename", file_status = false, path = 4 },
 				},
-				lualine_c = {},
 				lualine_x = {
 					{
 						lazy_status.updates,
@@ -22,6 +21,14 @@ return {
 				},
 				lualine_y = {},
 				lualine_z = {},
+			},
+			extensions = {
+				"aerial",
+				"lazy",
+				"mason",
+				"neo-tree",
+				"trouble",
+				"toggleterm",
 			},
 		})
 	end,

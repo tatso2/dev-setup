@@ -24,11 +24,11 @@ return {
 		-- Add borders around LSP messages
 		-- This can be configured more easily if you're using noice
 		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-			border = "rounded",
+			border = "single",
 			title = "Info",
 		})
 		vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-			border = "rounded",
+			border = "single",
 		})
 
 		vim.api.nvim_create_autocmd("LspAttach", {

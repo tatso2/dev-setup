@@ -13,6 +13,13 @@ return {
 		},
 		indent = {
 			enabled = true,
+			-- Disable animation
+			animate = {
+				duration = {
+					step = 0,
+					total = 0,
+				},
+			},
 		},
 	},
 }

@@ -11,7 +11,7 @@ return {
 			flavour = "mocha",
 			transparent_background = true,
 			show_end_of_buffer = false,
-			term_colors = true,
+			term_colors = false,
 			color_overrides = {
 				mocha = {
 					base = macchiato.mantle,

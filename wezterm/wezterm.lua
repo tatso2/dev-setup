@@ -7,15 +7,15 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 -- Font
 config.font = wezterm.font({
-	family = "JetBrainsMono Nerd Font",
+	family = "JetBrains Mono",
 	weight = "Medium",
 })
 config.font_size = 16
 
 -- UI bit
 config.enable_tab_bar = true
-config.window_background_opacity = 0.9
-config.macos_window_background_blur = 20
+config.window_background_opacity = 0.97
+config.macos_window_background_blur = 30
 config.text_background_opacity = 1
 config.inactive_pane_hsb = {
 	saturation = 0.9,
@@ -23,41 +23,30 @@ config.inactive_pane_hsb = {
 }
 config.window_frame = {
 	font_size = 15,
-	--   active_titlebar_bg = "#333344",
-	--   inactive_titlebar_bg = "#333344"
+	active_titlebar_bg = "#333344",
 }
-config.background = {
-	{
-		source = {
-			Gradient = {
-				colors = { "#1e1e2e" },
-			},
-		},
-		opacity = 0.95,
-		width = "100%",
-		height = "100%",
-	},
 
-	{
-		source = {
-			File = wezterm.home_dir .. "/.config/wezterm/from_me_to_you.jpg",
-		},
-		opacity = 0.05,
-		width = "100%",
-		height = "100%",
-		hsb = {
-			brightness = 3,
-		},
-	},
-}
--- config.window_background_image_hsb = {
--- 	brightness = 0.3,
--- 	hue = 1.0,
--- 	saturation = 1.0,
--- }
-
-config.window_decorations = "RESIZE"
+-- MACOS_FORCE_ENABLE_SHADOW is only for Mac
+config.window_decorations = "INTEGRATED_BUTTONS | RESIZE | MACOS_FORCE_ENABLE_SHADOW"
 config.color_scheme = "Tokyo Night"
+
+config.window_background_gradient = {
+	orientation = "Vertical",
+	-- Based on Catppuccin
+	colors = {
+		"#11111b",
+		"#11111c",
+		"#11111d",
+		"#1e1e2e",
+		"#18192f",
+		"#24273f",
+		"#30344f",
+		"#30344f",
+	},
+	interpolation = "Basis",
+	blend = "LinearRgb",
+}
+
 -- System settings
 config.window_close_confirmation = "NeverPrompt"
 config.default_cursor_style = "BlinkingBar"
