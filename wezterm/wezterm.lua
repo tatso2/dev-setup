@@ -27,9 +27,10 @@ config.inactive_pane_hsb = {
 	saturation = 0.9,
 	brightness = 0.8,
 }
+local window_frame_color = "#222223"
 config.window_frame = {
 	font_size = 15,
-	active_titlebar_bg = "#222244",
+	active_titlebar_bg = window_frame_color,
 }
 
 -- MACOS_FORCE_ENABLE_SHADOW is only for Mac
@@ -45,13 +46,13 @@ config.window_background_gradient = {
 		},
 	},
 	colors = {
-		"#11111e",
-		"#11111c",
-		"#1e1e2e",
-		"#18192f",
-		"#24273f",
-		"#30344f",
-		"#a9b5df",
+		"#000000",
+		"#070A0D",
+		"#0f151b",
+		"#161F28",
+		"#1D2935",
+		"#253443",
+		"#2C3E50",
 	},
 	interpolation = "Basis",
 	blend = "LinearRgb",
@@ -73,7 +74,7 @@ wezterm.on("update-right-status", function(window, _)
 
 	window:set_right_status(wezterm.format({
 		{ Foreground = { Color = "#ffffff" } },
-		{ Background = { Color = "#222244" } },
+		{ Background = { Color = window_frame_color } },
 		{ Text = time_icon },
 		{ Text = " " },
 		{ Attribute = { Underline = "Single" } },
