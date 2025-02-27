@@ -23,6 +23,8 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"clangd", -- c++
+				"dockerls", -- dockerfile
+				"docker_compose_language_service", -- docker compose
 				"emmet_ls",
 				"gopls", -- Go
 				"pyright", -- Python

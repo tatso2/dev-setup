@@ -8,13 +8,19 @@ local config = wezterm.config_builder()
 -- Font
 config.font = wezterm.font({
 	family = "JetBrains Mono",
-	weight = "Medium",
+	weight = "DemiBold",
 })
 config.font_size = 16
 
 -- UI bit
 config.enable_tab_bar = true
-config.window_background_opacity = 0.97
+config.window_background_opacity = 0.9
+config.window_padding = {
+	left = 3,
+	right = 3,
+	top = 0,
+	bottom = 0,
+}
 config.macos_window_background_blur = 30
 config.text_background_opacity = 1
 config.inactive_pane_hsb = {
@@ -23,7 +29,7 @@ config.inactive_pane_hsb = {
 }
 config.window_frame = {
 	font_size = 15,
-	active_titlebar_bg = "#333344",
+	active_titlebar_bg = "#222244",
 }
 
 -- MACOS_FORCE_ENABLE_SHADOW is only for Mac
@@ -31,17 +37,21 @@ config.window_decorations = "INTEGRATED_BUTTONS | RESIZE | MACOS_FORCE_ENABLE_SH
 config.color_scheme = "Tokyo Night"
 
 config.window_background_gradient = {
-	orientation = "Vertical",
-	-- Based on Catppuccin
+	orientation = {
+		Radial = {
+			cx = 0.2,
+			cy = 0.9,
+			radius = 1.4,
+		},
+	},
 	colors = {
-		"#11111b",
+		"#11111e",
 		"#11111c",
-		"#11111d",
 		"#1e1e2e",
 		"#18192f",
 		"#24273f",
 		"#30344f",
-		"#30344f",
+		"#a9b5df",
 	},
 	interpolation = "Basis",
 	blend = "LinearRgb",
@@ -63,7 +73,7 @@ wezterm.on("update-right-status", function(window, _)
 
 	window:set_right_status(wezterm.format({
 		{ Foreground = { Color = "#ffffff" } },
-		{ Background = { Color = "#333344" } },
+		{ Background = { Color = "#222244" } },
 		{ Text = time_icon },
 		{ Text = " " },
 		{ Attribute = { Underline = "Single" } },
