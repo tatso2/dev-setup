@@ -5,6 +5,11 @@ return {
 		-- configurations
 		win = {
 			border = "single",
+			height = { max = 15 },
+			padding = { 1, 1 },
+		},
+		layout = {
+			spacing = 2,
 		},
 	},
 	keys = {
