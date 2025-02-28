@@ -6,9 +6,11 @@ return {
 		-- TODO: WIP
 		dashboard = {
 			enabled = true,
-			width = 60,
-			row = nil,
-			col = nil,
+			sections = {
+				{ section = "header" },
+				{ section = "keys", gap = 1, padding = 1 },
+				{ section = "startup" },
+			},
 		},
 	},
 }
