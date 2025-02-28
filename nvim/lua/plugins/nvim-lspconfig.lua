@@ -116,6 +116,12 @@ return {
 					},
 				})
 			end,
+			["dockerls"] = function()
+				lspconfig["dockerls"].setup({
+					capabilities = capabilities,
+					filetypes = { "Dockerfile" },
+				})
+			end,
 		})
 
 		-- Auto completion

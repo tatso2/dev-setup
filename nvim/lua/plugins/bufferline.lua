@@ -5,10 +5,15 @@ return {
 	opts = {
 		options = {
 			mode = "tabs",
+			themable = true,
+			indicator = {
+				style = "icon",
+			},
+			tab_size = 22,
 			offsets = {
 				{
 					filetype = "neo-tree",
-					text = "Current Directory",
+					text = "File Explorer",
 					highlight = "Directory",
 					text_align = "left",
 				},

@@ -4,6 +4,7 @@ return {
 	config = function()
 		require("hlchunk").setup({
 			chunk = {
+				use_tresitter = true,
 				-- Change the chunk style
 				chars = {
 					horizontal_line = "─",
@@ -14,7 +15,7 @@ return {
 				},
 				enable = true,
 				style = {
-					{ fg = "#888888" },
+					{ fg = "#6f55ff" },
 				},
 				-- Disable animation
 				duration = 0,

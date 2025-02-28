@@ -10,15 +10,5 @@ return {
 			row = nil,
 			col = nil,
 		},
-		indent = {
-			enabled = true,
-			-- Disable animation
-			animate = {
-				duration = {
-					step = 0,
-					total = 0,
-				},
-			},
-		},
 	},
 }

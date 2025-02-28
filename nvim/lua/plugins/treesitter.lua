@@ -6,13 +6,14 @@ return {
 		"windwp/nvim-ts-autotag",
 	},
 	config = function()
-		local configs = require("nvim-treesitter.configs")
+		local treesitter = require("nvim-treesitter.configs")
 
-		configs.setup({
+		treesitter.setup({
 			ensure_installed = {
 				"bash",
 				"c",
 				"cpp",
+				"dockerfile",
 				"lua",
 				"luadoc",
 				"html",
@@ -21,7 +22,6 @@ return {
 				"lua",
 				"python",
 				"rust",
-				"toml",
 				"typescript",
 				"tsx",
 				"yaml",
@@ -33,7 +33,6 @@ return {
 			sync_install = false,
 			highlight = { enable = true },
 			indent = { enable = true },
-			autotag = { enable = true },
 			incremental_selection = {
 				enable = true,
 				keymaps = {
