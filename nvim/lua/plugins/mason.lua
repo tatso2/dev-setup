@@ -23,6 +23,7 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"clangd", -- c++
+				"cmake", -- cmake for cpp
 				"dockerls", -- dockerfile
 				"docker_compose_language_service", -- docker compose
 				"emmet_ls",
@@ -35,6 +36,7 @@ return {
 			},
 		})
 
+		-- Formatting and linting
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"prettier", -- prettier formatter
