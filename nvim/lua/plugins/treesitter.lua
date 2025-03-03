@@ -13,6 +13,7 @@ return {
 				"bash",
 				"c",
 				"cpp",
+				"cmake",
 				"dockerfile",
 				"lua",
 				"luadoc",

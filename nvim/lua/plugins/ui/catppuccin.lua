@@ -8,10 +8,10 @@ return {
 		local macchiato = require("catppuccin.palettes").get_palette("macchiato")
 
 		catppuccin.setup({
-			flavour = "mocha",
-			transparent_background = true,
+			flavour = "macchiato",
+			transparent_background = false,
 			show_end_of_buffer = false,
-			term_colors = false,
+			term_colors = true,
 			color_overrides = {
 				mocha = {
 					base = macchiato.mantle,

@@ -12,5 +12,14 @@ return {
 				{ section = "startup" },
 			},
 		},
+		indent = {
+			enabled = true,
+			animate = {
+				duration = {
+					step = 0,
+					total = 0,
+				},
+			},
+		},
 	},
 }
