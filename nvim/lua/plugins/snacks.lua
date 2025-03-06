@@ -13,12 +13,18 @@ return {
 			},
 		},
 		indent = {
-			enabled = true,
+			indent = {
+				enabled = true,
+			},
 			animate = {
 				duration = {
 					step = 0,
 					total = 0,
 				},
+			},
+			scope = {
+				enabled = true,
+				hl = "SnacksIndent1",
 			},
 		},
 	},
