@@ -5,9 +5,8 @@ return {
 	opts = {
 		-- TODO: WIP
 		dashboard = {
-			enabled = true,
+			width = 60,
 			sections = {
-				{ section = "header" },
 				{ section = "keys", gap = 1, padding = 1 },
 				{ section = "startup" },
 			},
