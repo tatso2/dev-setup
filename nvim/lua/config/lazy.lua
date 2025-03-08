@@ -54,8 +54,7 @@ require("lazy").setup({
 		{ import = "plugins.nvim-ts-autotag" },
 		{ import = "plugins.aerial" },
 		{ import = "plugins.illuminate" },
-		-- { import = "plugins.nvim-origami" },
-		{ import = "plugins.nvim-ufo" },
+		{ import = "plugins.statuscol" },
 	},
 	-- UI configs
 	ui = {

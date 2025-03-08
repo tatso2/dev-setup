@@ -25,6 +25,23 @@ opt.smartcase = true -- If you include mixed case in your search, assumes you wa
 opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start" -- allow backspace on indent, etc.
 
+-- -- Folding code
+opt.foldmethod = "expr"
+opt.foldenable = true
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldcolumn = "1"
+opt.foldtext = ""
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.fillchars = {
+	foldopen = "",
+	foldclose = "",
+	fold = " ",
+	foldsep = " ",
+	diff = "╱",
+	eob = " ",
+}
+
 -- clipboard
 opt.clipboard:append({ "unnamedplus" }) -- use system clipboard as default register
 
