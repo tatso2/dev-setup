@@ -14,7 +14,7 @@ return {
 			term_colors = true,
 			color_overrides = {
 				mocha = {
-					base = macchiato.mantle,
+					-- base = macchiato.mantle,
 					surface0 = "#444762",
 					text = "#cdddff",
 				},
@@ -22,6 +22,11 @@ return {
 			highlight_overrides = {
 				-- TODO: cursor color is overridden in iTerm2 or wezTerm
 				-- depending on the colour scheme you have
+				macchiato = function()
+					return {
+						LineNr = { fg = "#737994" },
+					}
+				end,
 				mocha = function()
 					return {
 						LineNr = { fg = "#737994" },

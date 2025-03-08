@@ -35,6 +35,7 @@ require("lazy").setup({
 		{ import = "plugins.highlightcolors" },
 		{ import = "plugins.mason" },
 		{ import = "plugins.treesitter" },
+		{ import = "plugins.treesitter-context" },
 		{ import = "plugins.neoscroll" },
 		{ import = "plugins.comment" },
 		{ import = "plugins.nvim-lspconfig" },
@@ -53,6 +54,8 @@ require("lazy").setup({
 		{ import = "plugins.nvim-ts-autotag" },
 		{ import = "plugins.aerial" },
 		{ import = "plugins.illuminate" },
+		-- { import = "plugins.nvim-origami" },
+		{ import = "plugins.nvim-ufo" },
 	},
 	-- UI configs
 	ui = {
