@@ -40,8 +40,6 @@ require("lazy").setup({
 		{ import = "plugins.nvim-lspconfig" },
 		{ import = "plugins.nvim-cmp" },
 		{ import = "plugins.nvim-autopairs" },
-		-- { import = "plugins.hlchunk" },
-		-- { import = "plugins.indent-blankline" },
 		{ import = "plugins.bufferline" },
 		{ import = "plugins.nvim-colorizer" },
 		{ import = "plugins.telescope" },
@@ -53,6 +51,8 @@ require("lazy").setup({
 		{ import = "plugins.surround" },
 		{ import = "plugins.snacks" },
 		{ import = "plugins.nvim-ts-autotag" },
+		{ import = "plugins.aerial" },
+		{ import = "plugins.illuminate" },
 	},
 	-- UI configs
 	ui = {

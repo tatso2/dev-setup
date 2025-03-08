@@ -49,6 +49,8 @@ return {
 				"gofumpt", -- Go formatter,
 				"pylint", -- python linter
 				"eslint_d", -- web dev related linter
+				"hadolint", -- dockerfile linter
+				"cmakelint", -- cpp linter
 			},
 		})
 	end,

@@ -17,6 +17,7 @@ return {
 				"dockerfile",
 				"lua",
 				"luadoc",
+				"haskell",
 				"html",
 				"javascript",
 				"json",

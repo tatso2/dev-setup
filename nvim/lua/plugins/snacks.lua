@@ -26,5 +26,6 @@ return {
 				hl = "SnacksIndent1",
 			},
 		},
+		words = { enabled = false },
 	},
 }
