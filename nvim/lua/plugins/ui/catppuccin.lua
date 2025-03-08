@@ -28,6 +28,20 @@ return {
 					}
 				end,
 			},
+			integrations = {
+				aerial = true,
+				cmp = true,
+				fzf = true,
+				gitsigns = true,
+				illuminate = true,
+				mason = true,
+				lsp_trouble = true,
+				neotree = true,
+				snacks = true,
+				treesitter = true,
+				telescope = true,
+				which_key = true,
+			},
 		})
 		vim.cmd([[colorscheme catppuccin]])
 	end,
