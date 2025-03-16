@@ -4,70 +4,55 @@ return {
 	lazy = false,
 	priority = 1000,
 	config = function()
-		local bg = "#2d2a2e"
-		local bg_dark = "#19181a"
-		local bg_dark1 = "#221f22"
-		local bg_highlight = "#2f334d"
-		local blue = "#82aaff"
-		local blue0 = "#3e68d7"
-		local blue1 = "#65bcff"
+		local bg = "#16161a"
+		local bg_sidebar = "#14141a"
+		local bg_dark = "#1f2335"
+		local bg_dark1 = "#1b1e2d"
+		local bg_highlight = "#292e42" -- line highlight
+		local blue = "#7aa2f7"
+		local blue0 = "#3d59a1"
+		local blue1 = "#2ac3de"
 		local blue2 = "#0db9d7"
 		local blue5 = "#89ddff"
 		local blue6 = "#b4f9f8"
 		local blue7 = "#394b70"
-		local comment = "#636da6"
-		local cyan = "#86e1fc"
+		local comment = "#565f89"
+		local cyan = "#7dcfff"
 		local dark3 = "#545c7e"
 		local dark5 = "#737aa2"
-		local fg = "#fcfcfa"
-		local fg_dark = "#828bb8"
+		local fg = "#c0caf5"
+		local fg_dark = "#a9b1d6"
 		local fg_gutter = "#3b4261"
-		local green = "#c3e88d"
-		local green1 = "#4fd6be"
+		local green = "#9ece6a"
+		local green1 = "#73daca"
 		local green2 = "#41a6b5"
-		local magenta = "#c099ff"
+		local magenta = "#bb9af7"
 		local magenta2 = "#ff007c"
-		local orange = "#ff966c"
-		local purple = "#fca7ea"
-		local red = "#ff757f"
-		local red1 = "#c53b53"
-		local teal = "#4fd6be"
-		local terminal_black = "#444a73"
-		local yellow = "#ffc777"
+		local orange = "#ff9e64"
+		local purple = "#9d7cd8"
+		local red = "#f7768e"
+		local red1 = "#db4b4b"
+		local teal = "#1abc9c"
+		local terminal_black = "#414868"
+		local yellow = "#e0af68"
 		local git = {
-			add = "#b8db87",
-			change = "#7ca1f2",
-			delete = "#e26a75",
+			add = "#449dab",
+			change = "#6183bb",
+			delete = "#914c54",
 		}
-
-		-- Line colors, etc.
-		local LineNrUnselected = "#767676"
-		local comment = "#949493"
-
 		require("tokyonight").setup({
-			style = "storm",
-			transparent = false,
+			style = "night",
+			transparent = true,
 			styles = {
-				-- sidebars = "transparent",
-				floats = "transparent",
+				sidebars = "normal",
+				floats = "normal",
 			},
 			on_colors = function(colors)
-				colors.bg = bg
-				colors.fg = fg
-				colors.bg_dark = bg_dark
-				colors.bg_dark1 = bg_dark1
-				-- 	colors.bg_highlight = bg_highlight
-				-- 	colors.bg_statusline = bg_statusline
-				-- 	colors.fg = fg -- font color
-				-- 	colors.fg_dark = fg_dark
-				-- 	colors.fg_gutter = fg_gutter
-				-- 	colors.fg_sidebar = fg_sidebar
+				colors.bg = bg -- ok
+				colors.bg_highlight = bg_highlight -- ok
+				colors.fg = "#ededef"
 			end,
-			on_highlights = function(hl)
-				hl.LineNrAbove = { fg = LineNrUnselected }
-				hl.LineNrBelow = { fg = LineNrUnselected }
-				hl.Comment = { fg = comment }
-			end,
+			on_highlights = function(hl) end,
 		})
 		vim.cmd([[colorscheme tokyonight]])
 	end,

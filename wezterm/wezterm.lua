@@ -38,26 +38,27 @@ config.window_frame = {
 config.window_decorations = "INTEGRATED_BUTTONS | RESIZE | MACOS_FORCE_ENABLE_SHADOW"
 config.color_scheme = "Tokyo Night"
 
-config.window_background_gradient = {
-	orientation = {
-		Radial = {
-			cx = 0.2,
-			cy = 0.9,
-			radius = 1.4,
-		},
-	},
-	colors = {
-		"#000000",
-		"#070A0D",
-		"#0f151b",
-		"#161F28",
-		"#1D2935",
-		"#253443",
-		"#2C3E50",
-	},
-	interpolation = "Basis",
-	blend = "LinearRgb",
-}
+-- config.window_background_gradient = {
+-- 	orientation = "Vertical",
+-- 	-- orientation = {
+-- 	-- 	Radial = {
+-- 	-- 		cx = 0.2,
+-- 	-- 		cy = 0.9,
+-- 	-- 		radius = 1.4,
+-- 	-- 	},
+-- 	-- },
+-- 	colors = {
+-- 		"#000000",
+-- 		"#070A0D",
+-- 		-- "#0f151b",
+-- 		-- "#161F28",
+-- 		"#1D2935",
+-- 		-- "#253443",
+-- 		-- "#2C3E50",
+-- 	},
+-- 	interpolation = "Basis",
+-- 	blend = "LinearRgb",
+-- }
 
 -- System settings
 config.window_close_confirmation = "NeverPrompt"

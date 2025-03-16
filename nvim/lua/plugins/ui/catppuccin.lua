@@ -15,8 +15,20 @@ return {
 			color_overrides = {
 				mocha = {
 					-- base = macchiato.mantle,
-					surface0 = "#444762",
-					text = "#cdddff",
+					base = "#22242A",
+					mantle = "#2b2b2c", -- sidebar, lualine, whichkey bg
+					crust = "#ffffff",
+					text = "#ededff",
+					overlay2 = "#87878f", -- comment
+					surface2 = "#ff00ff",
+					-- subtext1 = "#bac2de",
+					-- subtext0 = "#a6adc8",
+					-- overlay2 = "#9399b2",
+					-- overlay1 = "#7f849c",
+					-- overlay0 = "#6c7086",
+					-- surface2 = "#585b70",
+					-- surface1 = "#45475a",
+					-- surface0 = "#313244",
 				},
 			},
 			highlight_overrides = {
