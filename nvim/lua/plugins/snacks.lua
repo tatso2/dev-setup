@@ -23,7 +23,6 @@ return {
 			},
 			scope = {
 				enabled = true,
-				hl = "SnacksIndent1",
 			},
 		},
 		terminal = { enabled = false },

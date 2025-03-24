@@ -36,7 +36,7 @@ config.window_frame = {
 
 -- MACOS_FORCE_ENABLE_SHADOW is only for Mac
 config.window_decorations = "INTEGRATED_BUTTONS | RESIZE | MACOS_FORCE_ENABLE_SHADOW"
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "Catppuccin Macchiato (Gogh)"
 
 -- config.window_background_gradient = {
 -- 	orientation = "Vertical",

@@ -7,6 +7,7 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	opts = {
+		bind_to_cwd = false,
 		window = {
 			width = 35,
 		},

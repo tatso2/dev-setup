@@ -5,7 +5,12 @@ return {
 		local lualine = require("lualine")
 		local lazy_status = require("lazy.status")
 
+		local citylife = require("citylife")
+
 		lualine.setup({
+			options = {
+				theme = citylife.lualine,
+			},
 			sections = {
 				lualine_c = {
 					{ "filename", file_status = false, path = 4 },
