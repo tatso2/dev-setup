@@ -12,6 +12,8 @@ return {
 				theme = citylife.lualine,
 			},
 			sections = {
+				lualine_a = { "mode" },
+				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = {
 					{ "filename", file_status = false, path = 4 },
 				},
@@ -24,7 +26,7 @@ return {
 					{ "fileformat" },
 					{ "filetype" },
 				},
-				lualine_y = {},
+				lualine_y = { "location" },
 				lualine_z = {},
 			},
 			extensions = {
