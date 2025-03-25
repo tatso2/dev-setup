@@ -82,6 +82,14 @@ function tab_title(tab_info)
 	if title and #title > 0 then
 		return title
 	end
+
+	-- Get process info
+	-- Refresh tab title name after closing yazi
+	local process_name = tab_info.active_pane.foreground_process_name
+	if process_name then
+		process_name = string.gsub(process_name, "^.*/([^/]+)$", "%1")
+		return process_name
+	end
 	return tab_info.active_pane.title
 end
 
