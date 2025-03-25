@@ -114,10 +114,13 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 		icon_foreground = C.lavender
 	end
 
+	-- tab_index is incremented by 1 so that it starts with 1
+	-- matching ActiveTab numbers to keyboard numbers
+	-- ActiveTab=8 is disabled as a side effect
 	return {
 		{ Background = { Color = background } },
 		{ Foreground = { Color = foreground } },
-		{ Text = " " .. tab.tab_index .. "." },
+		{ Text = " " .. tab.tab_index + 1 .. "." },
 		{ Foreground = { Color = icon_foreground } },
 		{ Text = " " .. ICON .. " " },
 		{ Foreground = { Color = foreground } },
