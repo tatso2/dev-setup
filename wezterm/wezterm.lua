@@ -120,6 +120,12 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	elseif title == "docker" then
 		ICON = wezterm.nerdfonts.fa_docker
 		icon_foreground = C.lavender
+	elseif title == "top" then
+		ICON = wezterm.nerdfonts.md_monitor
+		icon_foreground = C.yellow
+	elseif title == "yazi" then
+		ICON = wezterm.nerdfonts.fa_folder
+		icon_foreground = C.git_blue
 	end
 
 	-- tab_index is incremented by 1 so that it starts with 1
