@@ -22,6 +22,10 @@ return {
 						["<C-h>"] = "which_key",
 						["<C-k>"] = actions.move_selection_previous, -- default is up
 						["<C-j>"] = actions.move_selection_next, -- default is down
+						["<esc>"] = actions.close,
+					},
+					n = {
+						["<Esc>"] = actions.close,
 					},
 				},
 			},
