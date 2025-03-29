@@ -211,12 +211,18 @@ automatically-unhide-macos-hidden-apps = false
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
 
+    # Terminal
     [[on-window-detected]]
-    if.app-id = "com.github.wez.wezterm"
-    run = "move-node-to-workspace T"
+        if.app-id = "com.github.wez.wezterm"
+        run = "move-node-to-workspace T"
 
+    # Web browser
     [[on-window-detected]]
-    if.app-id = "com.google.Chrome"
-    run = "move-node-to-workspace B"
+        if.app-id = "com.google.Chrome"
+        run = "move-node-to-workspace W"
 
+    # Excel
+    [[on-window-detected]]
+        if.app-id = "com.microsoft.Excel"
+        run = "move-node-to-workspace E"
 
