@@ -226,3 +226,8 @@ automatically-unhide-macos-hidden-apps = false
         if.app-id = "com.microsoft.Excel"
         run = "move-node-to-workspace E"
 
+    # Outlook
+    [[on-window-detected]]
+        if.app-id = "com.microsoft.Powerpoint"
+        run = "move-node-to-workspace P"
+
