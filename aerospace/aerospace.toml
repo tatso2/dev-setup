@@ -65,6 +65,9 @@ automatically-unhide-macos-hidden-apps = false
     outer.top =        5
     outer.right =      5 
 
+[workspace-to-monitor-force-assignment]
+    1 = "^built-in retina display$"
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -175,7 +178,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-q = 'move-node-to-workspace Q'
     alt-shift-r = 'move-node-to-workspace R'
     alt-shift-s = 'move-node-to-workspace S'
-    alt-shift-t = 'move-node-to-workspace T'
+    alt-shift-t = 'move-node-to-workspace T' # Terminal
     alt-shift-u = 'move-node-to-workspace U'
     alt-shift-v = 'move-node-to-workspace V'
     alt-shift-w = 'move-node-to-workspace W' # Chrome
