@@ -35,20 +35,44 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		opts.desc = "Show LSP references"
 		keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
+
 		opts.desc = "Show definition"
 		keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+
+		opts.desc = "Go to declaration"
+		keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+
 		opts.desc = "Show line diagnostics"
 		keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
 	end,
 })
+
+-- Customising diagnostics
 vim.diagnostic.config({
 	underline = false,
-	virtual_lines = { current_line = true },
 	float = { border = "rounded" },
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "✖",
+			[vim.diagnostic.severity.WARN] = "",
+			[vim.diagnostic.severity.HINT] = "󰠠",
+			[vim.diagnostic.severity.INFO] = "",
+		},
+		texthl = {
+			[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
+			[vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
+			[vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
+			[vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
+		},
+		numhl = {
+			[vim.diagnostic.severity.ERROR] = "",
+			[vim.diagnostic.severity.WARN] = "",
+			[vim.diagnostic.severity.HINT] = "",
+			[vim.diagnostic.severity.INFO] = "",
+		},
+	},
 })
 
--- Add noselect to completeopt, otherwise the top suggestion will be annoyingly selected
--- vim.cmd("set completeopt+=noselect")
-
 -- Enable rounded borders in floating windows
+-- only valid from vim 0.11
 vim.o.winborder = "rounded"
