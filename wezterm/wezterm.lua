@@ -46,7 +46,7 @@ config.colors = {
 
 -- Window UI
 -- MACOS_FORCE_ENABLE_SHADOW is only for Mac
-config.window_decorations = "INTEGRATED_BUTTONS | RESIZE | MACOS_FORCE_ENABLE_SHADOW"
+config.window_decorations = "RESIZE | MACOS_FORCE_ENABLE_SHADOW"
 config.window_background_opacity = 0.9
 config.window_padding = {
 	left = 0,
@@ -76,7 +76,7 @@ config.inactive_pane_hsb = {
 }
 
 -- Tab UI
-config.enable_tab_bar = true
+config.enable_tab_bar = false
 function tab_title(tab_info)
 	local title = tab_info.tab_title
 	if title and #title > 0 then
