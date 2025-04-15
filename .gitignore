@@ -1,8 +1,8 @@
-iterm2
-yarn
-alacritty
-NuGet
 .DS_Store
+NuGet
+alacritty
+darktable
 fish
+iterm2
 xbuild
-
+yarn
