@@ -5,11 +5,11 @@ return {
 		local lualine = require("lualine")
 		local lazy_status = require("lazy.status")
 
-		local citylife = require("citylife")
+		-- local citylife = require("citylife")
 
 		lualine.setup({
 			options = {
-				theme = citylife.lualine,
+				theme = "catppuccin",
 			},
 			sections = {
 				lualine_a = { "mode" },

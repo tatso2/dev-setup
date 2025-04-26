@@ -76,7 +76,7 @@ config.inactive_pane_hsb = {
 }
 
 -- Tab UI
-config.enable_tab_bar = false
+config.enable_tab_bar = true
 function tab_title(tab_info)
 	local title = tab_info.tab_title
 	if title and #title > 0 then

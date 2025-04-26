@@ -25,7 +25,8 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		-- import all plugins in lua/plugins/
-		{ import = "plugins.ui.citylife" },
+		-- { import = "plugins.ui.citylife" },
+		{ import = "plugins.ui.catppuccin" },
 		{ import = "plugins.toggleterm" },
 		{ import = "plugins.neotree" },
 		{ import = "plugins.lualine" },
@@ -58,7 +59,7 @@ require("lazy").setup({
 	},
 	-- UI configs
 	ui = {
-		border = "single",
+		-- border = "single",
 		size = {
 			width = 0.8,
 			height = 0.8,
