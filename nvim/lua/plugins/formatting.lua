@@ -7,6 +7,7 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				bash = { "shfmt" },
+				cpp = { "clang_format" },
 				python = { "ruff" },
 				go = { "goimports", "gofmt" },
 				javascript = { "prettier" },
