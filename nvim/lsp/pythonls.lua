@@ -1,7 +1,7 @@
 return {
 	cmd = { "pyright-langserver", "--stdio" },
 	filetypes = { "python" },
-	root_makers = {
+	root_markers = {
 		"pyproject.toml",
 		"setup.py",
 		"setup.cfg",
