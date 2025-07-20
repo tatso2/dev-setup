@@ -3,7 +3,7 @@ return {
 		"clangd",
 		"--background-index",
 	},
-	root_makers = {
+	root_markers = {
 		".clangd",
 		"compile_commands.json",
 		"compile_flags.txt",

@@ -1,7 +1,7 @@
 return {
 	cmd = { "cmake-language-server" },
 	filetypes = { "cmake" },
-	root_makers = {
+	root_markers = {
 		"build",
 		"cmake",
 		"CMakePresets.json",

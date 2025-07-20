@@ -1,7 +1,7 @@
 return {
 	cmd = { "docker-langserver", "--stdio" },
 	filetypes = { "dockerfile" },
-	root_makers = { "Dckerfile" },
+	root_markers = { "Dckerfile" },
 	settings = {
 		docker = {
 			languageserver = {
