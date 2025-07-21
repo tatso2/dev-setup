@@ -31,7 +31,7 @@ return {
 		-- To format specic range of text
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 			conform.format({
-				lsp_fall_back = true,
+				lsp_fallback = true,
 				async = false,
 				timeout_ms = 1000,
 			})
