@@ -7,5 +7,7 @@ return {
 			opts = {},
 		},
 	},
+	config = function()
+		local dap = require("dap")
+	end,
 }
-

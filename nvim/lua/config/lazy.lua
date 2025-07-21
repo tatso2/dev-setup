@@ -27,6 +27,7 @@ require("lazy").setup({
 		-- import all plugins in lua/plugins/
 		-- { import = "plugins.ui.citylife" },
 		{ import = "plugins.ui.catppuccin" },
+		{ import = "plugins.debug.nvim-dap" },
 		{ import = "plugins.toggleterm" },
 		{ import = "plugins.neotree" },
 		{ import = "plugins.lualine" },
