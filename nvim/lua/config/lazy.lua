@@ -57,6 +57,7 @@ require("lazy").setup({
 		{ import = "plugins.aerial" },
 		{ import = "plugins.illuminate" },
 		{ import = "plugins.statuscol" },
+		{ import = "plugins.flash" },
 	},
 	-- UI configs
 	ui = {
